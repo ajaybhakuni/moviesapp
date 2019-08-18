@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPage" android:layout_width="wrap_content" android:layout_height="180.0dip" />
+    <TextView android:textColor="@color/white" android:id="@id/text_slider" android:background="@drawable/slider_text" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

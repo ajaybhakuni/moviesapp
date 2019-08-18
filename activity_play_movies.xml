@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.youtube.player.YouTubePlayerView android:id="@id/moviePlayer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/movieName" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/movieViews" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/fav" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_favorite_border" android:layout_weight="0.25" android:contentDescription="@null" style="?buttonBarButtonStyle" />
+                <ImageButton android:id="@id/playlater" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_watch_later" android:layout_weight="0.25" android:contentDescription="@null" style="?buttonBarButtonStyle" />
+                <ImageButton android:id="@id/share" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_share_black" android:layout_weight="0.25" android:contentDescription="@null" style="?buttonBarButtonStyle" />
+                <ImageButton android:id="@id/report" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_report" android:layout_weight="0.25" android:contentDescription="@null" style="?buttonBarButtonStyle" />
+            </LinearLayout>
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/movie_description" />
+            <TextView android:textSize="13.0sp" android:id="@id/movieDesc" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+            <TextView android:textSize="13.0sp" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/movieDetails" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="start|center" android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/movies_you_like" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/extraMovies" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="10.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="start|center" android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_comments" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/commentBox" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/noComments" android:background="@drawable/commentboxborder" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/be_first_to_comment" android:drawableStart="@drawable/ic_insert_comment"
+                android:drawableLeft="@drawable/ic_insert_comment" />
+            <TextView android:textSize="13.0sp" android:gravity="start|center" android:layout_gravity="center_horizontal" android:id="@id/addComment" android:background="@drawable/boxborder" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_comment" android:drawableEnd="@drawable/ic_insert_comment"
+                android:drawableRight="@drawable/ic_insert_comment" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

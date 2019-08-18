@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@color/white" android:paddingTop="?android:actionBarSize" android:paddingBottom="60.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/slider_main" />
+            <include layout="@layout/home_latest" />
+            <include layout="@layout/home_bollywood" />
+            <include layout="@layout/home_hollywood" />
+            <include layout="@layout/home_tollywood" />
+            <include layout="@layout/home_gujarati" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView android:id="@id/adViews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_id" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

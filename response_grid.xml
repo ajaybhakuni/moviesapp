@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="top|center" android:id="@id/response" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/movieImg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_weight="0.2" android:contentDescription="@null" />
+        <LinearLayout android:gravity="start|center" android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.7">
+            <TextView android:layout_gravity="start|center" android:id="@id/title_movie" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="start|center" android:id="@id/movie_link" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="start|center" android:id="@id/date" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="top|center" android:id="@id/delete" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_delete" android:layout_weight="0.1" android:contentDescription="@null" style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

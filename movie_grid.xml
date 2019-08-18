@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/gridImg" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginBottom="2.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:contentDescription="@string/movie_poster" />
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:layout_gravity="center" android:id="@id/title_movie" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
